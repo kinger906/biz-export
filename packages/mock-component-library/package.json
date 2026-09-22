@@ -1,0 +1,20 @@
+{
+  "name": "@biz/mock-component-library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-all.mjs && node scripts/post-build.mjs && pnpm run generate:manifest",
+    "generate:manifest": "node scripts/generate-manifest.mjs"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vite-plugin-dts": "^4.3.0",
+    "vue": "^3.5.13"
+  }
+}

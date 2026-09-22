@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.zip
+.DS_Store
+.env
+.env.local
+packages/export-api/data/
+packages/export-api/storage/
+packages/assembler/out/
+packages/assembler/.smoke-out/
+out/
+*.log

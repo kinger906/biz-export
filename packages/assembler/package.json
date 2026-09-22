@@ -1,0 +1,30 @@
+{
+  "name": "@biz/assembler",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "biz-export": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "cli": "node dist/cli.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

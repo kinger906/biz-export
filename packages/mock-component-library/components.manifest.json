@@ -1,0 +1,117 @@
+{
+  "library": "@biz/mock-component-library",
+  "version": "1.0.0",
+  "buildId": "build-1790049523972",
+  "generatedAt": "2026-09-22T03:58:43.972Z",
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "shared": {
+    "id": "@biz/shared",
+    "entry": "shared/index.js",
+    "types": "shared/index.d.ts"
+  },
+  "theme": {
+    "id": "@biz/theme",
+    "styles": [
+      "theme/tokens.css"
+    ]
+  },
+  "components": [
+    {
+      "name": "Button",
+      "version": "1.0.0",
+      "entry": "dist/Button/index.js",
+      "types": "dist/Button/index.d.ts",
+      "styles": [
+        "dist/Button/style.css"
+      ],
+      "deps": [
+        "@biz/shared"
+      ],
+      "peerDependencies": {
+        "vue": "^3.4.0"
+      },
+      "tags": [
+        "基础",
+        "按钮"
+      ],
+      "description": "通用业务按钮",
+      "requiresTheme": true,
+      "requiresShared": true,
+      "preview": "previews/Button.png"
+    },
+    {
+      "name": "Pagination",
+      "version": "1.0.0",
+      "entry": "dist/Pagination/index.js",
+      "types": "dist/Pagination/index.d.ts",
+      "styles": [
+        "dist/Pagination/style.css"
+      ],
+      "deps": [
+        "@biz/shared"
+      ],
+      "peerDependencies": {
+        "vue": "^3.4.0"
+      },
+      "tags": [
+        "基础",
+        "分页"
+      ],
+      "description": "分页控件",
+      "requiresTheme": true,
+      "requiresShared": true,
+      "preview": "previews/Pagination.png"
+    },
+    {
+      "name": "OrderTable",
+      "version": "1.0.0",
+      "entry": "dist/OrderTable/index.js",
+      "types": "dist/OrderTable/index.d.ts",
+      "styles": [
+        "dist/OrderTable/style.css"
+      ],
+      "deps": [
+        "Button",
+        "Pagination",
+        "@biz/shared"
+      ],
+      "peerDependencies": {
+        "vue": "^3.4.0"
+      },
+      "tags": [
+        "订单",
+        "表格"
+      ],
+      "description": "订单表格，依赖 Button 与 Pagination",
+      "requiresTheme": true,
+      "requiresShared": true,
+      "preview": "previews/OrderTable.png"
+    },
+    {
+      "name": "UserCard",
+      "version": "1.0.0",
+      "entry": "dist/UserCard/index.js",
+      "types": "dist/UserCard/index.d.ts",
+      "styles": [
+        "dist/UserCard/style.css"
+      ],
+      "deps": [
+        "Button",
+        "@biz/shared"
+      ],
+      "peerDependencies": {
+        "vue": "^3.4.0"
+      },
+      "tags": [
+        "用户",
+        "卡片"
+      ],
+      "description": "用户信息卡片",
+      "requiresTheme": true,
+      "requiresShared": true,
+      "preview": "previews/UserCard.png"
+    }
+  ]
+}

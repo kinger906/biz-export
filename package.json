@@ -1,0 +1,22 @@
+{
+  "name": "biz-export",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vue3 business component selective export platform",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "build:lib": "pnpm --filter @biz/mock-component-library run build",
+    "build:assembler": "pnpm --filter @biz/assembler run build",
+    "build:api": "pnpm --filter @biz/export-api run build",
+    "build:admin": "pnpm --filter @biz/admin-web run build",
+    "dev:api": "pnpm --filter @biz/export-api run dev",
+    "dev:admin": "pnpm --filter @biz/admin-web run dev",
+    "export:cli": "pnpm --filter @biz/assembler run cli",
+    "generate:manifest": "pnpm --filter @biz/mock-component-library run generate:manifest",
+    "smoke": "pnpm build:lib && pnpm build:assembler && node scripts/smoke-test.mjs",
+    "test:api": "node scripts/api-test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
